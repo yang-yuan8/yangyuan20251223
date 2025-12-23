@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <!-- 性能优化：添加必要的meta标签 -->
+    <meta name="description" content="专业的个人简历展示页面">
+    <meta name="keywords" content="简历,个人介绍,技能展示,工作经验">
+    <meta name="author" content="张三">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- 性能优化：预加载Font Awesome字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 性能优化：预加载CSS文件 -->
+    <link rel="preload" href="styles.css" as="style">
+    
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="header">
+            <div class="profile">
+                <div class="profile-picture">
+                    <!-- 性能优化：使用懒加载属性 -->
+                    <img src="https://via.placeholder.com/150" alt="个人照片" class="profile-img" loading="lazy">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">张三</h1>
+                    <p class="title">前端开发工程师</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="微博"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item" aria-label="邮箱">
+                    <i class="fas fa-envelope"></i>
+                    <span>zhangsan@example.com</span>
+                </div>
+                <div class="contact-item" aria-label="电话">
+                    <i class="fas fa-phone"></i>
+                    <span>138-0000-0000</span>
+                </div>
+                <div class="contact-item" aria-label="地址">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>北京市朝阳区</span>
+                </div>
+                <div class="contact-item" aria-label="网站">
+                    <i class="fas fa-globe"></i>
+                    <span>www.zhangsan.com</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- 内容区域 -->
+        <div class="content">
+            <!-- 侧边栏 -->
+            <aside class="sidebar">
+                <!-- 关于我 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-user"></i>关于我</h2>
+                    <p class="about-text">热爱前端开发的技术人，拥有5年前端开发经验，专注于构建高性能、用户友好的Web应用。熟悉现代前端框架和工具链，对UI/UX设计有浓厚兴趣，追求卓越的代码质量和用户体验。</p>
+                </section>
+                
+                <!-- 技能 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-cogs"></i>技能</h2>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5/CSS3</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React/Vue</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Sass/LESS</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 语言能力 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-language"></i>语言能力</h2>
+                    <div class="language-list">
+                        <div class="language-item">
+                            <span class="language-name">中文</span>
+                            <span class="language-level">母语</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">英语</span>
+                            <span class="language-level">专业熟练</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 兴趣爱好 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-heart"></i>兴趣爱好</h2>
+                    <div class="hobbies">
+                        <div class="hobby-item" aria-label="阅读">
+                            <i class="fas fa-book"></i>
+                            <span>阅读</span>
+                        </div>
+                        <div class="hobby-item" aria-label="旅行">
+                            <i class="fas fa-plane"></i>
+                            <span>旅行</span>
+                        </div>
+                        <div class="hobby-item" aria-label="摄影">
+                            <i class="fas fa-camera"></i>
+                            <span>摄影</span>
+                        </div>
+                        <div class="hobby-item" aria-label="音乐">
+                            <i class="fas fa-music"></i>
+                            <span>音乐</span>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+            
+            <!-- 主要内容 -->
+            <main class="main-content">
+                <!-- 工作经验 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-briefcase"></i>工作经验</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">高级前端开发工程师</h3>
+                                <span class="timeline-period">2020 - 至今</span>
+                            </div>
+                            <p class="timeline-company">ABC科技有限公司</p>
+                            <ul class="timeline-content">
+                                <li>负责公司核心产品的前端架构设计和开发，使用React、TypeScript等技术栈</li>
+                                <li>优化前端性能，将页面加载时间减少60%，提升用户体验</li>
+                                <li>主导前端组件库的开发和维护，提高团队开发效率</li>
+                                <li>参与产品需求讨论和技术选型，与后端团队协作完成API设计</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">前端开发工程师</h3>
+                                <span class="timeline-period">2018 - 2020</span>
+                            </div>
+                            <p class="timeline-company">XYZ互联网公司</p>
+                            <ul class="timeline-content">
+                                <li>开发和维护公司官网和移动端H5页面，使用Vue.js框架</li>
+                                <li>实现响应式布局，确保在不同设备上的良好显示效果</li>
+                                <li>使用webpack优化构建流程，提高部署效率</li>
+                                <li>修复生产环境中的各类前端问题，确保网站稳定运行</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Web前端实习生</h3>
+                                <span class="timeline-period">2017 - 2018</span>
+                            </div>
+                            <p class="timeline-company">123科技有限公司</p>
+                            <ul class="timeline-content">
+                                <li>协助开发公司内部管理系统的前端界面</li>
+                                <li>参与网站改版工作，实现新的UI设计和交互效果</li>
+                                <li>学习和应用现代前端技术和工具</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 教育背景 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap"></i>教育背景</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">计算机科学与技术硕士</h3>
+                                <span class="timeline-period">2015 - 2018</span>
+                            </div>
+                            <p class="timeline-company">北京大学</p>
+                            <ul class="timeline-content">
+                                <li>GPA：3.8/4.0，专业排名前5%</li>
+                                <li>参与多项科研项目，发表论文2篇</li>
+                                <li>获得优秀毕业生称号</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">软件工程学士</h3>
+                                <span class="timeline-period">2011 - 2015</span>
+                            </div>
+                            <p class="timeline-company">清华大学</p>
+                            <ul class="timeline-content">
+                                <li>GPA：3.7/4.0，多次获得奖学金</li>
+                                <li>担任计算机协会会长，组织技术讲座多次</li>
+                                <li>积极参与校园黑客马拉松等活动</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 项目经验 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-project-diagram"></i>项目经验</h2>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3 class="project-title">企业管理系统重构</h3>
+                                <span class="project-period">2021 - 2022</span>
+                            </div>
+                            <p class="project-description">将传统的jQuery管理系统重构为现代化React应用，提升系统性能和用户体验。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Ant Design</span>
+                                <span class="tech-tag">Webpack</span>
+                            </div>
+                            <ul class="project-accomplishments">
+                                <li>设计并实现组件化架构，提高代码复用率80%</li>
+                                <li>优化数据处理逻辑，将页面响应时间从2秒减少到300ms</li>
+                                <li>实现复杂的权限管理系统和动态表单生成器</li>
+                                <li>编写完整的开发文档和组件使用指南</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3 class="project-title">移动端电商应用</h3>
+                                <span class="project-period">2020 - 2021</span>
+                            </div>
+                            <p class="project-description">开发高性能、用户友好的移动端电商应用，支持商品浏览、下单、支付等功能。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Vuex</span>
+                                <span class="tech-tag">Vant UI</span>
+                                <span class="tech-tag">Axios</span>
+                                <span class="tech-tag">Less</span>
+                            </div>
+                            <ul class="project-accomplishments">
+                                <li>实现响应式设计，适配各种移动设备尺寸</li>
+                                <li>优化图片加载和缓存策略，减少数据流量消耗50%</li>
+                                <li>实现离线缓存功能，提升弱网环境下的用户体验</li>
+                                <li>与后端API协作，实现完整的业务逻辑流程</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 证书 -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-certificate"></i>证书</h2>
+                    <div class="certificate-list">
+                        <div class="certificate-item">
+                            <h3 class="certificate-title">Google Professional Web Developer</h3>
+                            <span class="certificate-date">2022</span>
+                        </div>
+                        <div class="certificate-item">
+                            <h3 class="certificate-title">AWS Certified Developer - Associate</h3>
+                            <span class="certificate-date">2021</span>
+                        </div>
+                        <div class="certificate-item">
+                            <h3 class="certificate-title">Microsoft Certified: Azure Developer Associate</h3>
+                            <span class="certificate-date">2020</span>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2023 张三. 保留所有权利。 <a href="#">下载简历PDF版</a></p>
+        </footer>
+    </div>
+    
+    <!-- 性能优化：内联关键CSS（如果有的话） -->
+    <style>
+        /* 性能优化：内联关键CSS可以减少阻塞时间 */
+        .container { max-width: 1200px; margin: 0 auto; }
+        .section { opacity: 0; }
+    </style>
+    
+    <!-- 性能优化：添加简单的性能监控代码 -->
+    <script>
+        // 记录页面加载时间
+        window.addEventListener('load', function() {
+            const loadTime = performance.now();
+            console.log('页面加载完成，耗时: ' + loadTime + 'ms');
+        });
+    </script>
+</body>
+</html>
